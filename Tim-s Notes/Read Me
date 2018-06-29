@@ -1,0 +1,15 @@
+This requires a number of dependencies. Notably node.js, mocha, solc, web3, truffle, and ganache-cli
+The package.json has the required versions. 
+
+The bulk of this is for establishing a connection with the rinkeby test network and making a simple read and write contract. 
+
+TimsDeploy.js uses infura.io to establish a free connection to ethereum networks for testing as setting up a local node takes too long...
+
+Most of the notes are in inbox.test.js as this is the important bit, it sets up a local network with ganache web3 and then tests whether
+the contract deploys cleanly using the mocha testing framework.
+
+Compile.js just tells solc to compile the solidity contract
+
+The main thing is that most of this is achievable just using the remix or truffle IDE. They handle all of this back end Javascript for 
+you so all you have to do is write the contract. The majority of the work is creating the front end for the application and running
+tests on test networks anyway. 
